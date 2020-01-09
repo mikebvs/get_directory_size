@@ -3,9 +3,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.AccessControl;
-using System.Security.Principal;
-using System.Threading;
+
 
 namespace dirSize
 {
@@ -28,7 +26,7 @@ namespace dirSize
                 {
                     namePrint += "-";
                 }
-                Console.WriteLine(String.Format("{0,-100}|{1,-5} KB", namePrint, size/1024/1024));
+                Console.WriteLine(String.Format("{0,-100}|{1,-5} MB", namePrint, size/1024/1024));
             }
         }
     }
